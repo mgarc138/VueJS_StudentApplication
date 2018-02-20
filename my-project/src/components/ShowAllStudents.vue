@@ -10,8 +10,8 @@
         <article>Bachelor's Degree Title: {{student.bsEducationTitle}}</article>
         <article>Masters School Name: {{student.msEducationSchool}}</article>
         <article>Masters Degree Title: {{student.msEducationTitle}}</article>
-        <article>PHd School Name: {{student.pHdEducationSchool}}</article>
-        <article>PHd Degree Title: {{student.pHdEducationTitle}}</article>
+        <article>PhD School Name: {{student.pHdEducationSchool}}</article>
+        <article>PhD Degree Title: {{student.pHdEducationTitle}}</article>
         <article>Work Experience Company Name One: {{student.workExperienceCompanyNameOne}}</article>
         <article>Work Experience Title One: {{student.workExperienceTitleOne}}</article>
         <article>Work Experience Company Name Two: {{student.workExperienceCompanyNameTwo}}</article>

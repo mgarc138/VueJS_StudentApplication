@@ -14,6 +14,31 @@
       <input type="text" v-model="applicant.bsEducationSchool" required/>
       <label>Bachelors Education Title:</label>
       <input type="text" v-model="applicant.bsEducationTitle" required/>
+      <label>Masters Education School:</label>
+      <input type="text" v-model="applicant.msEducationSchool" required/>
+      <label>Masters Education Title:</label>
+      <input type="text" v-model="applicant.msEducationTitle" required/>
+      <label>PhD Education School:</label>
+      <input type="text" v-model="applicant.pHdEducationSchool" required/>
+      <label>PhD Education Title:</label>
+      <input type="text" v-model="applicant.pHdEducationTitle" required/>
+      <label>Work Experience Company Name One:</label>
+      <input type="text" v-model="applicant.workExperienceCompanyNameOne" required/>
+      <label>Work Experience Title One:</label>
+      <input type="text" v-model="applicant.workExperienceTitleOne" required/>
+      <label>Work Experience Company Name Two:</label>
+      <input type="text" v-model="applicant.workExperienceCompanyNameTwo" required/>
+      <label>Work Experience Title Two:</label>
+      <input type="text" v-model="applicant.workExperienceTitleTwo" required/>
+      <label>Work Experience Company Name Three:</label>
+      <input type="text" v-model="applicant.workExperienceCompanyNameThree" required/>
+      <label>Work Experience Title Three:</label>
+      <input type="text" v-model="applicant.workExperienceTitleThree" required/>
+      <label>Extra Curricular Activity One:</label>
+      <input type="text" v-model="applicant.extraCurricularActivitiesOne" required/>
+      <label>Extra Curricular Activity Two:</label>
+      <input type="text" v-model="applicant.extraCurricularActivitiesTwo" required/>
+
       <button class="button" style="vertical-align:middle" v-on:click.prevent="post"><span>Add Applicant</span></button>
     </form>
     <div v-if="submitted">
@@ -33,7 +58,19 @@ export default {
         email: "",
         phoneNumber: "",
         bsEducationSchool: "",
-        bsEducationTitle: ""
+        bsEducationTitle: "",
+        msEducationSchool: "",
+        msEducationTitle: "",
+        pHdEducationSchool: "",
+        pHdEducationTitle: "",
+        workExperienceCompanyNameOne: "",
+        workExperienceTitleOne: "",
+        workExperienceCompanyNameTwo: "",
+        workExperienceTitleTwo: "",
+        workExperienceCompanyNameThree: "",
+        workExperienceTitleThree: "",
+        extraCurricularActivitiesOne: "",
+        extraCurricularActivitiesTwo: ""
       },
       submitted:false,
     }
@@ -46,7 +83,19 @@ export default {
         email: this.applicant.email,
         phoneNumber: this.applicant.phoneNumber,
         bsEducationSchool: this.applicant.bsEducationSchool,
-        bsEducationTitle: this.applicant.bsEducationTitle
+        bsEducationTitle: this.applicant.bsEducationTitle,
+        msEducationSchool: this.applicant.msEducationSchool,
+        msEducationTitle: this.applicant.msEducationTitle,
+        pHdEducationSchool: this.applicant.pHdEducationSchool,
+        pHdEducationTitle: this.applicant.pHdEducationTitle,
+        workExperienceCompanyNameOne: this.applicant.workExperienceCompanyNameOne,
+        workExperienceTitleOne: this.applicant.workExperienceTitleOne,
+        workExperienceCompanyNameTwo: this.applicant.workExperienceCompanyNameTwo,
+        workExperienceTitleTwo: this.applicant.workExperienceTitleTwo,
+        workExperienceCompanyNameThree: this.applicant.workExperienceCompanyNameThree,
+        workExperienceTitleThree: this.applicant.workExperienceTitleThree,
+        extraCurricularActivitiesOne: this.applicant.extraCurricularActivitiesOne,
+        extraCurricularActivitiesTwo: this.applicant.extraCurricularActivitiesTwo
       }).then(function(data){
         console.log(data);
         this.submitted = true;
