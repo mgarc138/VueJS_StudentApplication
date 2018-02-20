@@ -50,34 +50,34 @@
 <script>
 
 export default {
-  data(){
-    return{
+  data () {
+    return {
       applicant: {
-        name: "",
-        address: "",
-        email: "",
-        phoneNumber: "",
-        bsEducationSchool: "",
-        bsEducationTitle: "",
-        msEducationSchool: "",
-        msEducationTitle: "",
-        pHdEducationSchool: "",
-        pHdEducationTitle: "",
-        workExperienceCompanyNameOne: "",
-        workExperienceTitleOne: "",
-        workExperienceCompanyNameTwo: "",
-        workExperienceTitleTwo: "",
-        workExperienceCompanyNameThree: "",
-        workExperienceTitleThree: "",
-        extraCurricularActivitiesOne: "",
-        extraCurricularActivitiesTwo: ""
+        name: '',
+        address: '',
+        email: '',
+        phoneNumber: '',
+        bsEducationSchool: '',
+        bsEducationTitle: '',
+        msEducationSchool: '',
+        msEducationTitle: '',
+        pHdEducationSchool: '',
+        pHdEducationTitle: '',
+        workExperienceCompanyNameOne: '',
+        workExperienceTitleOne: '',
+        workExperienceCompanyNameTwo: '',
+        workExperienceTitleTwo: '',
+        workExperienceCompanyNameThree: '',
+        workExperienceTitleThree: '',
+        extraCurricularActivitiesOne: '',
+        extraCurricularActivitiesTwo: ''
       },
-      submitted:false,
+      submitted: false
     }
   },
-  methods:{
-    post:function(){
-      this.$http.post('http://localhost:5000/api/student',{
+  methods: {
+    post: function () {
+      this.$http.post('http://localhost:5000/api/student', {
         name: this.applicant.name,
         address: this.applicant.address,
         email: this.applicant.email,
@@ -96,10 +96,10 @@ export default {
         workExperienceTitleThree: this.applicant.workExperienceTitleThree,
         extraCurricularActivitiesOne: this.applicant.extraCurricularActivitiesOne,
         extraCurricularActivitiesTwo: this.applicant.extraCurricularActivitiesTwo
-      }).then(function(data){
-        console.log(data);
-        this.submitted = true;
-      });
+      }).then(function (data) {
+        console.log(data)
+        this.submitted = true
+      })
     }
   }
 }
